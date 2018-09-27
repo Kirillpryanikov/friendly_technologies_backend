@@ -23,7 +23,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '5mb' }));
 app.use(bodyParser.json());
 app.use(bodyParser.raw());
 
-app.use(require('./routes/web.js'));
+app.use('/api',require('./routes/web.js'));
 
 app.listen(process.env.PORT, function(err) {
     if(!err) {
