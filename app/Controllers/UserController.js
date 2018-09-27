@@ -40,7 +40,7 @@ class UserController {
   				});
   			}else{
   				Response.status(400);
-  				Response.send({success:false,error:Error.error.details[0].message})
+  				Response.send({success:false,error:Error.details[0].message})
   			}
   		});
     }
