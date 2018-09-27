@@ -10,7 +10,7 @@
 ### Login 
 - POST - /api/login
 - BODY
-	 - `email`: String, required,
+  - `email`: String, required,
   - `password`: String,required
 - Response Object:
 ```javascript
@@ -35,7 +35,7 @@
  ### Get users
  - POST - /api/users
  - HEADERS
-   - Authorization: String;//Bearer token
+   - `Authorization`: String (Bearer token)
  - Response Array:
  ```javascript
  [
